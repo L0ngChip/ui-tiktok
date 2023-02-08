@@ -9,6 +9,7 @@ import {
     faArrowRightFromBracket,
 } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react';
+import { Link } from 'react-router-dom';
 
 import 'tippy.js/dist/tippy.css';
 import styles from './Header.module.scss';
@@ -18,6 +19,7 @@ import Menu from '~/components/Popper/Menu';
 import { MailBoxIcon, MessageIcon } from '~/components/Icons';
 import Image from '~/components/Image';
 import Search from '../Search';
+import configRoutes from '~/config/routes';
 
 const cx = classNames.bind(styles);
 const MENU_iTEMS = [
@@ -38,6 +40,62 @@ const MENU_iTEMS = [
                 {
                     code: 'france',
                     title: 'Tiếng Pháp',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt',
                 },
             ],
         },
@@ -87,7 +145,9 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <img src={images.logo} alt="Tiktok"></img>
+                    <Link to={configRoutes.home} className={cx('logo-link')}>
+                        <img src={images.logo} alt="Tiktok"></img>
+                    </Link>
                 </div>
                 <Search />
                 <div className={cx('action')}>
