@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 
-import styles from '~/components/Layout/DefaultLayout/Sidebar/Siderbar.module.scss';
+import styles from '~/layouts/DefaultLayout/Sidebar/Siderbar.module.scss';
 
 const cx = classNames.bind(styles);
 function Sidebar() {

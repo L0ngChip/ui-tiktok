@@ -3,6 +3,7 @@
 :root {
     --primary: #fe2c55;
     --white: white;
+    --font-family: 'ProximaNova', sans-serif;
     --default-layout-header-height: 60px;
     --default-layout-width: 1150px;
     --default-layout-horizonal-spacer: 24px;
@@ -25,11 +26,42 @@ html {
 }
 
 body {
-    font-family: 'ProximaNova', sans-serif;
+    overflow-y: overlay;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     line-height: 1.5;
     color: var(--text-color);
     text-rendering: optimizespeed;
+}
+//Scrollbar CSS
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 button,
