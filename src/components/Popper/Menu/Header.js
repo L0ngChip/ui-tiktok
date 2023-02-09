@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
@@ -15,5 +16,10 @@ function Header({ onBack, title }) {
         </header>
     );
 }
+
+Header.propTypes = {
+    onBack: PropTypes.func,
+    title: PropTypes.string,
+};
 
 export default Header;
