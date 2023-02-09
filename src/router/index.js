@@ -1,4 +1,4 @@
-import configRoutes from '~/config/routes';
+import config from '~/config';
 // Layouts
 import { HeaderOnly } from '~/layouts';
 
@@ -11,11 +11,11 @@ import Search from '~/pages/Search';
 
 //Public router
 const publicRouter = [
-    { path: configRoutes.home, component: Home },
-    { path: configRoutes.following, component: Following },
-    { path: configRoutes.profile, component: Profile },
-    { path: configRoutes.upload, component: Upload, layout: HeaderOnly },
-    { path: configRoutes.search, component: Search, layout: null },
+    { path: config.routes.home, component: Home },
+    { path: config.routes.following, component: Following },
+    { path: config.routes.profile, component: Profile },
+    { path: config.routes.upload, component: Upload, layout: HeaderOnly },
+    { path: config.routes.search, component: Search, layout: null },
 ];
 
 const privateRouter = [];
