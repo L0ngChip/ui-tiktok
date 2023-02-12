@@ -16,7 +16,7 @@ import styles from './Header.module.scss';
 import images from '~/assets';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
-import { MailBoxIcon, MessageIcon } from '~/components/Icons';
+import { MailBoxIcon, MessageIcon, AnimationIcon } from '~/components/Icons';
 import Image from '~/components/Image';
 import Search from '../Search';
 import config from '~/config';
@@ -156,6 +156,12 @@ function Header() {
                             <Button text leftIcon={<FontAwesomeIcon icon={faPlus} />}>
                                 Tải lên
                             </Button>
+                            <Tippy content="Tạo hiệu ứng" placement="bottom">
+                                <button className={cx('action-btn')}>
+                                    <AnimationIcon />
+                                </button>
+                            </Tippy>
+
                             <Tippy content="Tin nhắn" placement="bottom">
                                 <button className={cx('action-btn')}>
                                     <MessageIcon />
